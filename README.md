@@ -1,6 +1,6 @@
-# MetaHelper
+# MetaTagsHelper
 
-TODO: Write a gem description
+Rails helpers for building meta tags.
 
 ## Installation
 
@@ -20,15 +20,28 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You could use meta tags of erb code in your layout.
+```html
+  <%= meta_tags({
+    url: 'https://github.com',
+    site_name: 'GitHub',
+    image: 'https://assets-cdn.github.com/images/modules/open_graph/github-logo.png',
+    title: 'Build software better, together'
+    },'og') %>
+  <%= meta_tag('og:description', 'GitHub is the best place to build software together. Over 4 million people use GitHub to share code.') %>
+```
+Also you can read and rewrite your title in your view.
+```html
+<head>
+  <%= title("Title") %>
+  <%= title_tag("Sitename")  %>
+</head>
+<body>
+  <h1><%= title %></h1>
+...
+</body>
+```
 
-## Contributing
-
-1. Fork it ( https://github.com/[my-github-username]/meta_tags_helper/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
 
 ## License
 
