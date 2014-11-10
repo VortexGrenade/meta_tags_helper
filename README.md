@@ -1,4 +1,4 @@
-# MetaTagsHelper
+# MetaTagsHelper [![Build Status](https://travis-ci.org/VortexGrenade/meta_tags_helper.svg?branch=master)](https://travis-ci.org/VortexGrenade/meta_tags_helper)
 
 Rails helpers for building meta tags.
 
