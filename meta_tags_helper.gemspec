@@ -7,9 +7,9 @@ Gem::Specification.new do |spec|
   spec.version       = MetaTagsHelper::VERSION
   spec.authors       = ['Okhlopkov Anatoly']
   spec.email         = ['ohlopkov0211@gmail.com']
-  spec.summary       = ''
-  spec.description   = ''
-  spec.homepage      = ''
+  spec.summary       = 'Rails helpers for building meta tags.'
+  spec.description   = 'Rails helpers for building meta tags.'
+  spec.homepage      = 'https://github.com/VortexGrenade/meta_tags_helper.git'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
