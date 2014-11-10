@@ -1,3 +1,4 @@
+# coding: utf-8
 require "meta_tags_helper/version"
 
 module MetaTagsHelper
