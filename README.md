@@ -20,26 +20,26 @@ Or install it yourself as:
 
 ## Usage
 
-You could use meta tags of erb code in your layout.
-```html
-  <%= meta_tags({
-    url: 'https://github.com',
-    site_name: 'GitHub',
-    image: 'https://assets-cdn.github.com/images/modules/open_graph/github-logo.png',
-    title: 'Build software better, together'
-    },'og') %>
-  <%= meta_tag('og:description', 'GitHub is the best place to build software together. Over 4 million people use GitHub to share code.') %>
-```
-Also you can read and rewrite your title in your view.
 ```html
 <head>
-  <%= title("Title") %>
-  <%= title_tag("Sitename")  %>
+  <%= meta_tags og: {
+    url: 'https://github.com',
+    site_name: 'GitHub',
+    title: 'Build software better, together'
+  } %>
 </head>
-<body>
-  <h1><%= title %></h1>
-...
-</body>
+```
+
+Also you can manage title tag:
+```html
+<head>
+  <%= title_tag 'Sitename' %>
+</head>
+```
+
+View:
+```html
+<h1><%= title 'Title' %></h1>
 ```
 
 
